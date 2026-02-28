@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CFC Ottawa — Communauté des Frères Chrétiens d'Ottawa</title>
+  <meta name="description" content="Communauté des Frères Chrétiens d'Ottawa — Une église pour toute la famille. Services le dimanche matin. Pasteur Olivier Musanganya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <!-- LANG SWITCH -->
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="19" stroke="rgba(201,168,76,0.5)" stroke-width="1.2"/>
+        <ellipse cx="22" cy="22" rx="9" ry="19" stroke="rgba(201,168,76,0.3)" stroke-width="1" fill="none"/>
+        <line x1="4" y1="22" x2="40" y2="22" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+        <line x1="22" y1="5" x2="22" y2="39" stroke="rgba(201,168,76,0.9)" stroke-width="2.2"/>
+        <line x1="12" y1="13" x2="32" y2="13" stroke="rgba(201,168,76,0.9)" stroke-width="2.2"/>
+      </svg>
+      <div class="nav-logo-text">
+        <div class="name">CFC Ottawa</div>
+        <div class="sub" data-fr="Frères Chrétiens" data-en="Christian Brotherhood">Frères Chrétiens</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#about" data-fr="À Propos" data-en="About">À Propos</a>
+      <a href="#pastor" data-fr="Pasteur" data-en="Pastor">Pasteur</a>
+      <a href="#sermons" data-fr="Sermons" data-en="Sermons">Sermons</a>
+      <a href="#events" data-fr="Événements" data-en="Events">Événements</a>
+      <a href="#team" data-fr="Équipe" data-en="Team">Équipe</a>
+      <a href="#blog" data-fr="Blog" data-en="Blog">Blog</a>
+      <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#schedule" data-fr="Nous visiter" data-en="Visit Us">Nous visiter</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-globe">
+      <svg viewBox="0 0 300 300" fill="none" stroke="white">
+        <circle cx="150" cy="150" r="130" stroke-width="1"/>
+        <ellipse cx="150" cy="150" rx="60" ry="130" stroke-width="1"/>
+        <ellipse cx="150" cy="150" rx="110" ry="130" stroke-width="0.5"/>
+        <line x1="20" y1="150" x2="280" y2="150" stroke-width="0.5"/>
+        <line x1="20" y1="100" x2="280" y2="100" stroke-width="0.5"/>
+        <line x1="20" y1="200" x2="280" y2="200" stroke-width="0.5"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text" data-fr="Ottawa · Canada · Fondée sur la Parole" data-en="Ottawa · Canada · Founded on the Word">Ottawa · Canada · Fondée sur la Parole</span>
+        <div class="hero-eyebrow-line"></div>
+      </div>
+      <h1 class="hero-title">
+        <span data-fr="Communauté" data-en="Christian">Communauté</span>
+        <strong data-fr="des Frères" data-en="Brotherhood">des Frères</strong>
+        <span class="gold" data-fr="Chrétiens" data-en="Community">Chrétiens</span>
+      </h1>
+      <p class="hero-subtitle" data-fr="Marchons comme les apôtres de Jésus-Christ ont marché.<br>Services chaque dimanche matin à Ottawa, Ontario." data-en="Walking as the apostles of Jesus Christ walked.<br>Sunday morning services in Ottawa, Ontario.">
+        Marchons comme les apôtres de Jésus-Christ ont marché.<br>Services chaque dimanche matin à Ottawa, Ontario.
+      </p>
+      <div class="hero-ctas">
+        <a href="#schedule" class="btn btn-gold" data-fr="Planifier ma visite" data-en="Plan my visit">Planifier ma visite</a>
+        <a href="#sermons" class="btn btn-ghost" data-fr="Voir nos messages" data-en="Watch our sermons">Voir nos messages</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">1986</div>
+        <div class="hero-stat-label" data-fr="Fondée" data-en="Founded">Fondée</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">5+</div>
+        <div class="hero-stat-label" data-fr="Continents" data-en="Continents">Continents</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">7+</div>
+        <div class="hero-stat-label" data-fr="Pays" data-en="Countries">Pays</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">∞</div>
+        <div class="hero-stat-label" data-fr="Foi partagée" data-en="Shared faith">Foi partagée</div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-bar"></div>
+      <span data-fr="Défiler" data-en="Scroll">Défiler</span>
+    </div>
+  </section>
+
+  <!-- INTERNATIONAL BANNER -->
+  <div id="international">
+    <div class="container">
+      <div class="intl-text">
+        <strong data-fr="Mouvement international CFC" data-en="CFC International Movement">Mouvement international CFC</strong>
+        <span data-fr=" — Présent depuis 1986 sur plusieurs continents" data-en=" — Present since 1986 across multiple continents"> — Présent depuis 1986 sur plusieurs continents</span>
+      </div>
+      <div class="intl-countries">
+        <div class="intl-flag"><span>🇨🇦</span> <span>Canada</span></div>
+        <div class="intl-flag"><span>🇫🇷</span> <span>France</span></div>
+        <div class="intl-flag"><span>🇧🇪</span> <span>Belgique</span></div>
+        <div class="intl-flag"><span>🇩🇪</span> <span>Allemagne</span></div>
+        <div class="intl-flag"><span>🇺🇸</span> <span>États-Unis</span></div>
+        <div class="intl-flag"><span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </span> <span data-fr="Afrique (BJ · TG · CI · CG · RDC)" data-en="Africa (BJ · TG · CI · CG · DRC)">Afrique (BJ · TG · CI · CG · RDC)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-card-main">
+            <div class="about-year">1986</div>
+            <div class="about-quote" data-fr="« La foi authentique du Christ — transmise comme les apôtres l'ont vécue. »" data-en="« The authentic faith of Christ — passed on as the apostles lived it. »">
+              « La foi authentique du Christ — transmise comme les apôtres l'ont vécue. »
+            </div>
+            <div class="about-quote-attr" data-fr="Vision fondatrice de la CFC" data-en="CFC Founding Vision">Vision fondatrice de la CFC</div>
+          </div>
+          <div class="about-card-sub">
+            <p data-fr="Fondée en juillet 1986, la Communauté des Frères Chrétiens est aujourd'hui présente sur plusieurs continents — et à Ottawa depuis plusieurs années sous la direction du Pasteur Olivier Musanganya." data-en="Founded in July 1986, the Christian Brotherhood Community is now present on multiple continents — and in Ottawa for several years under Pastor Olivier Musanganya's leadership.">
+              Fondée en juillet 1986, la Communauté des Frères Chrétiens est aujourd'hui présente sur plusieurs continents — et à Ottawa depuis plusieurs années sous la direction du Pasteur Olivier Musanganya.
+            </p>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-delay-2">
+          <p class="section-label" data-fr="Notre identité" data-en="Our identity">Notre identité</p>
+          <h2 class="section-title" data-fr="Une église <em>pour tous</em>, à Ottawa" data-en="A church <em>for everyone</em>, in Ottawa">Une église <em>pour tous</em>, à Ottawa</h2>
+          <div class="about-founded">
+            <span class="about-founded-year">1986</span>
+            <span class="about-founded-label" data-fr="Année de<br>fondation" data-en="Year of<br>founding">Année de<br>fondation</span>
+          </div>
+          <div class="about-text">
+            <p data-fr="CFC Ottawa fait partie du mouvement international de la Communauté des Frères Chrétiens (CFC), une église évangélique missionnaire dont la vision est de promouvoir la religion du Christ — Khristos, le Messie — et de marcher comme les apôtres de Jésus-Christ ont marché." data-en="CFC Ottawa is part of the international Christian Brotherhood Community (CFC), an evangelical missionary church whose vision is to promote the religion of Christ — Khristos, the Messiah — and to walk as the apostles of Jesus Christ walked.">
+              CFC Ottawa fait partie du mouvement international de la Communauté des Frères Chrétiens (CFC), une église évangélique missionnaire dont la vision est de promouvoir la religion du Christ — Khristos, le Messie — et de marcher comme les apôtres de Jésus-Christ ont marché.
+            </p>
+            <p data-fr="Notre communauté d'Ottawa accueille des familles, des jeunes, des enfants et des personnes de tous âges dans un environnement chaleureux, bilingue (français et anglais), ouvert à tous." data-en="Our Ottawa community welcomes families, youth, children, and people of all ages in a warm, bilingual (French and English) environment, open to all.">
+              Notre communauté d'Ottawa accueille des familles, des jeunes, des enfants et des personnes de tous âges dans un environnement chaleureux, bilingue (français et anglais), ouvert à tous.
+            </p>
+          </div>
+          <div class="about-services">
+            <div class="service-item" data-fr="Services dominicaux" data-en="Sunday Services">Services dominicaux</div>
+            <div class="service-item" data-fr="Groupes de prière" data-en="Prayer Groups">Groupes de prière</div>
+            <div class="service-item" data-fr="Cérémonies de mariage" data-en="Wedding Ceremonies">Cérémonies de mariage</div>
+            <div class="service-item" data-fr="Services funèbres" data-en="Funeral Services">Services funèbres</div>
+            <div class="service-item" data-fr="Baptêmes" data-en="Baptisms">Baptêmes</div>
+            <div class="service-item" data-fr="Formation au leadership" data-en="Leadership Training">Formation au leadership</div>
+            <div class="service-item" data-fr="Counseling pastoral" data-en="Pastoral Counseling">Counseling pastoral</div>
+            <div class="service-item" data-fr="Ministère enfants" data-en="Children's Ministry">Ministère enfants</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASTOR -->
+  <section id="pastor">
+    <div class="container">
+      <div class="pastor-grid">
+        <div class="pastor-portrait reveal">
+          <div class="pastor-frame">
+            <div class="pastor-accent-bar"></div>
+          </div>
+          <div class="pastor-name-card">
+            <div class="pname">Olivier Musanganya</div>
+            <div class="ptitle" data-fr="Pasteur Principal · CFC Ottawa" data-en="Lead Pastor · CFC Ottawa">Pasteur Principal · CFC Ottawa</div>
+          </div>
+        </div>
+        <div class="pastor-content reveal reveal-delay-2">
+          <p class="section-label" data-fr="Notre berger" data-en="Our shepherd">Notre berger</p>
+          <h2 class="section-title" data-fr="Pasteur Olivier <em>Musanganya</em>" data-en="Pastor Olivier <em>Musanganya</em>">Pasteur Olivier <em>Musanganya</em></h2>
+          <div class="pastor-bio">
+            <p data-fr="Le Pasteur Olivier Musanganya est le berger principal de la Communauté des Frères Chrétiens d'Ottawa. Sous sa direction, CFC Ottawa s'est développée en une communauté dynamique, accueillante et enracinée dans la Parole de Dieu." data-en="Pastor Olivier Musanganya is the lead shepherd of the Christian Brotherhood Community of Ottawa. Under his leadership, CFC Ottawa has grown into a vibrant, welcoming community rooted in the Word of God.">
+              Le Pasteur Olivier Musanganya est le berger principal de la Communauté des Frères Chrétiens d'Ottawa. Sous sa direction, CFC Ottawa s'est développée en une communauté dynamique, accueillante et enracinée dans la Parole de Dieu.
+            </p>
+            <p data-fr="Son ministère couvre la gestion de la communauté, le leadership, le counseling, les cérémonies (mariages, funérailles, baptêmes) et la formation de futurs leaders. Il est engagé à voir chaque membre de CFC grandir dans sa foi et son appel." data-en="His ministry covers community management, leadership, counseling, ceremonies (weddings, funerals, baptisms), and training future leaders. He is committed to seeing every CFC member grow in their faith and calling.">
+              Son ministère couvre la gestion de la communauté, le leadership, le counseling, les cérémonies (mariages, funérailles, baptêmes) et la formation de futurs leaders. Il est engagé à voir chaque membre de CFC grandir dans sa foi et son appel.
+            </p>
+          </div>
+          <div class="pastor-ministries">
+            <span class="ministry-tag" data-fr="Prédication" data-en="Preaching">Prédication</span>
+            <span class="ministry-tag" data-fr="Counseling pastoral" data-en="Pastoral Counseling">Counseling pastoral</span>
+            <span class="ministry-tag" data-fr="Formation de leaders" data-en="Leadership Training">Formation de leaders</span>
+            <span class="ministry-tag" data-fr="Cérémonies" data-en="Ceremonies">Cérémonies</span>
+            <span class="ministry-tag" data-fr="Vision stratégique" data-en="Strategic Vision">Vision stratégique</span>
+          </div>
+          <a href="#contact" class="btn btn-gold" style="margin-top: 32px; display:inline-block;" data-fr="Contacter le pasteur" data-en="Contact the pastor">Contacter le pasteur</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERMONS -->
+  <section id="sermons">
+    <div class="container">
+      <div class="sermons-header">
+        <div>
+          <p class="section-label reveal" data-fr="Messages récents" data-en="Recent Messages">Messages récents</p>
+          <h2 class="section-title reveal reveal-delay-1" data-fr="Sermons & <em>Prédications</em>" data-en="Sermons & <em>Preaching</em>">Sermons & <em>Prédications</em></h2>
+        </div>
+        <a href="https://www.youtube.com/@CFC-p/videos" target="_blank" class="btn btn-dark reveal" data-fr="Voir toutes les vidéos" data-en="View all videos">Voir toutes les vidéos</a>
+      </div>
+      <div class="sermons-grid">
+        <div class="sermon-card featured reveal">
+          <div class="sermon-thumb">
+            <div class="sermon-thumb-gradient"></div>
+            <div class="sermon-thumb-label" data-fr="Récent" data-en="Latest">Récent</div>
+            <div class="sermon-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="sermon-info">
+            <div class="sermon-series" data-fr="Série : Fondements apostoliques" data-en="Series: Apostolic Foundations">Série : Fondements apostoliques</div>
+            <div class="sermon-title" data-fr="Marcher dans les traces des Apôtres de Jésus-Christ" data-en="Walking in the Footsteps of the Apostles of Jesus Christ">Marcher dans les traces des Apôtres de Jésus-Christ</div>
+            <div class="sermon-meta">
+              <span data-fr="Pasteur Olivier Musanganya" data-en="Pastor Olivier Musanganya">Pasteur Olivier Musanganya</span>
+              <span class="sermon-meta-dot"></span>
+              <span data-fr="Dimanche 23 fév. 2026" data-en="Sun. Feb 23, 2026">Dimanche 23 fév. 2026</span>
+            </div>
+            <a href="https://www.youtube.com/@CFC-p/videos" target="_blank" class="sermon-youtube-link">
+              <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.5 15.5V8.5L16 12l-6.5 3.5z"/></svg>
+              <span data-fr="Voir sur YouTube" data-en="Watch on YouTube">Voir sur YouTube</span>
+            </a>
+          </div>
+        </div>
+        <div class="sermon-card reveal reveal-delay-1">
+          <div class="sermon-thumb">
+            <div class="sermon-thumb-gradient"></div>
+            <div class="sermon-play-btn" style="width:44px;height:44px;"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="sermon-info">
+            <div class="sermon-series" data-fr="Série : La Parole au quotidien" data-en="Series: The Daily Word">Série : La Parole au quotidien</div>
+            <div class="sermon-title" data-fr="La foi qui déplace les montagnes" data-en="The Faith That Moves Mountains">La foi qui déplace les montagnes</div>
+            <div class="sermon-meta">
+              <span data-fr="16 fév. 2026" data-en="Feb 16, 2026">16 fév. 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="sermon-card reveal reveal-delay-2">
+          <div class="sermon-thumb">
+            <div class="sermon-thumb-gradient"></div>
+            <div class="sermon-play-btn" style="width:44px;height:44px;"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="sermon-info">
+            <div class="sermon-series" data-fr="Série : Famille & Foi" data-en="Series: Family & Faith">Série : Famille & Foi</div>
+            <div class="sermon-title" data-fr="Construire sa maison sur le Roc" data-en="Building Your House on the Rock">Construire sa maison sur le Roc</div>
+            <div class="sermon-meta">
+              <span data-fr="9 fév. 2026" data-en="Feb 9, 2026">9 fév. 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="sermon-card reveal reveal-delay-3">
+          <div class="sermon-thumb">
+            <div class="sermon-thumb-gradient"></div>
+            <div class="sermon-play-btn" style="width:44px;height:44px;"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="sermon-info">
+            <div class="sermon-series" data-fr="Série : Identité chrétienne" data-en="Series: Christian Identity">Série : Identité chrétienne</div>
+            <div class="sermon-title" data-fr="Qui est Khristos — le Messie ?" data-en="Who is Khristos — the Messiah?">Qui est Khristos — le Messie ?</div>
+            <div class="sermon-meta">
+              <span data-fr="2 fév. 2026" data-en="Feb 2, 2026">2 fév. 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE EMBED -->
+  <section id="youtube">
+    <div class="container">
+      <p class="section-label reveal" data-fr="Notre chaîne YouTube" data-en="Our YouTube Channel">Notre chaîne YouTube</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Regardez nos <em>messages en ligne</em>" data-en="Watch our <em>messages online</em>">Regardez nos <em>messages en ligne</em></h2>
+      <p class="section-desc reveal reveal-delay-2" data-fr="Tous nos sermons sont disponibles gratuitement sur notre chaîne YouTube. Abonnez-vous pour ne manquer aucun message." data-en="All our sermons are available for free on our YouTube channel. Subscribe so you never miss a message.">
+        Tous nos sermons sont disponibles gratuitement sur notre chaîne YouTube. Abonnez-vous pour ne manquer aucun message.
+      </p>
+      <div class="yt-grid reveal reveal-delay-2">
+        <div class="yt-embed">
+          <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=CFC-p" title="CFC Ottawa YouTube" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div style="background:var(--light);padding:28px 24px;flex:1;">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;" data-fr="Notre chaîne" data-en="Our channel">Notre chaîne</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--black);margin-bottom:8px;">@CFC-p</div>
+            <p style="font-size:13px;color:var(--gray);line-height:1.7;" data-fr="Sermons, prédications et enseignements de la Communauté des Frères Chrétiens d'Ottawa." data-en="Sermons, preaching and teachings from the Christian Brotherhood Community of Ottawa.">Sermons, prédications et enseignements de la Communauté des Frères Chrétiens d'Ottawa.</p>
+            <a href="https://www.youtube.com/@CFC-p/videos" target="_blank" class="yt-subscribe" style="margin-top:20px;display:inline-flex;">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.5 15.5V8.5L16 12l-6.5 3.5z"/></svg>
+              <span data-fr="S'abonner" data-en="Subscribe">S'abonner</span>
+            </a>
+          </div>
+          <div style="background:var(--black);padding:28px 24px;flex:1;">
+            <div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;" data-fr="Regarder en direct" data-en="Watch live">Regarder en direct</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7;" data-fr="Nos services du dimanche matin sont diffusés en direct sur YouTube. Suivez-nous pour ne rien manquer." data-en="Our Sunday morning services are live-streamed on YouTube. Follow us so you don't miss anything.">Nos services du dimanche matin sont diffusés en direct sur YouTube. Suivez-nous pour ne rien manquer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events">
+    <div class="container">
+      <p class="section-label reveal" data-fr="À venir" data-en="Coming up">À venir</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Prochains <em>Événements</em>" data-en="Upcoming <em>Events</em>">Prochains <em>Événements</em></h2>
+      <div class="events-grid">
+        <div class="event-card reveal">
+          <div class="event-date">
+            <div class="event-date-num">02</div>
+            <div class="event-date-month" data-fr="Mars" data-en="Mar">Mars</div>
+          </div>
+          <div class="event-divider"></div>
+          <div class="event-body">
+            <div class="event-tag" data-fr="Hebdomadaire" data-en="Weekly">Hebdomadaire</div>
+            <div class="event-title" data-fr="Service du Dimanche Matin" data-en="Sunday Morning Service">Service du Dimanche Matin</div>
+            <p class="event-desc" data-fr="Prière, louange et message de la Parole. Bienvenue à toute la famille !" data-en="Prayer, worship and the Word message. The whole family is welcome!">Prière, louange et message de la Parole. Bienvenue à toute la famille !</p>
+            <span class="event-time" data-fr="Dimanche matin — Ottawa, Ontario" data-en="Sunday morning — Ottawa, Ontario">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span data-fr="Dimanche matin — Ottawa, Ontario" data-en="Sunday morning — Ottawa, Ontario">Dimanche matin — Ottawa, Ontario</span>
+            </span>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-1">
+          <div class="event-date">
+            <div class="event-date-num">15</div>
+            <div class="event-date-month" data-fr="Mars" data-en="Mar">Mars</div>
+          </div>
+          <div class="event-divider"></div>
+          <div class="event-body">
+            <div class="event-tag" data-fr="Prière" data-en="Prayer">Prière</div>
+            <div class="event-title" data-fr="Soirée de Prière & Louange" data-en="Prayer & Worship Evening">Soirée de Prière & Louange</div>
+            <p class="event-desc" data-fr="Un temps de prière collective, d'intercession et de louange pour toute la communauté." data-en="A time of collective prayer, intercession and worship for the whole community.">Un temps de prière collective, d'intercession et de louange pour toute la communauté.</p>
+            <span class="event-time" data-fr="19h00 — Ottawa" data-en="7:00 PM — Ottawa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span data-fr="19h00 — Ottawa" data-en="7:00 PM — Ottawa">19h00 — Ottawa</span>
+            </span>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-2">
+          <div class="event-date">
+            <div class="event-date-num">22</div>
+            <div class="event-date-month" data-fr="Mars" data-en="Mar">Mars</div>
+          </div>
+          <div class="event-divider"></div>
+          <div class="event-body">
+            <div class="event-tag" data-fr="Famille" data-en="Family">Famille</div>
+            <div class="event-title" data-fr="Journée Familles CFC Ottawa" data-en="CFC Ottawa Family Day">Journée Familles CFC Ottawa</div>
+            <p class="event-desc" data-fr="Activités pour tous les âges — enfants, jeunes, adultes et personnes âgées." data-en="Activities for all ages — children, youth, adults and seniors.">Activités pour tous les âges — enfants, jeunes, adultes et personnes âgées.</p>
+            <span class="event-time" data-fr="Toute la journée — Ottawa" data-en="All day — Ottawa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span data-fr="Toute la journée — Ottawa" data-en="All day — Ottawa">Toute la journée — Ottawa</span>
+            </span>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-3">
+          <div class="event-date">
+            <div class="event-date-num">05</div>
+            <div class="event-date-month" data-fr="Avr" data-en="Apr">Avr</div>
+          </div>
+          <div class="event-divider"></div>
+          <div class="event-body">
+            <div class="event-tag" data-fr="Jeunesse" data-en="Youth">Jeunesse</div>
+            <div class="event-title" data-fr="Retraite Jeunesse CFC" data-en="CFC Youth Retreat">Retraite Jeunesse CFC</div>
+            <p class="event-desc" data-fr="Un week-end de ressourcement, d'enseignement et de communion pour les 18-35 ans." data-en="A weekend of renewal, teaching and fellowship for 18-35 year olds.">Un week-end de ressourcement, d'enseignement et de communion pour les 18-35 ans.</p>
+            <span class="event-time" data-fr="Week-end — Lieu à confirmer" data-en="Weekend — Location TBD">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span data-fr="Week-end — Lieu à confirmer" data-en="Weekend — Location TBD">Week-end — Lieu à confirmer</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION PILLARS -->
+  <section id="mission">
+    <div class="container">
+      <p class="section-label reveal" data-fr="Nos piliers" data-en="Our pillars">Nos piliers</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Ce sur quoi nous <em>marchons</em>" data-en="What we <em>stand on</em>">Ce sur quoi nous <em>marchons</em></h2>
+      <div class="pillars">
+        <div class="pillar reveal reveal-delay-1">
+          <div class="pillar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 8h14"/></svg>
+          </div>
+          <div class="pillar-num">01</div>
+          <div class="pillar-title" data-fr="Foi authentique" data-en="Authentic Faith">Foi authentique</div>
+          <p class="pillar-text" data-fr="La religion du Christ — Khristos, le Messie — fondée sur l'Évangile sans compromis." data-en="The religion of Christ — Khristos, the Messiah — founded on the Gospel without compromise.">La religion du Christ — Khristos, le Messie — fondée sur l'Évangile sans compromis.</p>
+        </div>
+        <div class="pillar reveal reveal-delay-2">
+          <div class="pillar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div class="pillar-num">02</div>
+          <div class="pillar-title" data-fr="Fraternité" data-en="Brotherhood">Fraternité</div>
+          <p class="pillar-text" data-fr="Une famille unie dans la foi, l'amour et la solidarité fraternelle, à Ottawa et dans le monde." data-en="A family united in faith, love and brotherly solidarity, in Ottawa and around the world.">Une famille unie dans la foi, l'amour et la solidarité fraternelle, à Ottawa et dans le monde.</p>
+        </div>
+        <div class="pillar reveal reveal-delay-3">
+          <div class="pillar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div class="pillar-num">03</div>
+          <div class="pillar-title" data-fr="Mission apostolique" data-en="Apostolic Mission">Mission apostolique</div>
+          <p class="pillar-text" data-fr="Marcher comme les apôtres ont marché — dans la vérité, l'intégrité et la puissance de l'Esprit." data-en="Walking as the apostles walked — in truth, integrity and the power of the Spirit.">Marcher comme les apôtres ont marché — dans la vérité, l'intégrité et la puissance de l'Esprit.</p>
+        </div>
+        <div class="pillar reveal reveal-delay-4">
+          <div class="pillar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="pillar-num">04</div>
+          <div class="pillar-title" data-fr="Service & Prière" data-en="Service & Prayer">Service & Prière</div>
+          <p class="pillar-text" data-fr="Servir notre communauté à Ottawa et prier sans cesse — les deux piliers de notre vie commune." data-en="Serving our community in Ottawa and praying without ceasing — the two pillars of our common life.">Servir notre communauté à Ottawa et prier sans cesse — les deux piliers de notre vie commune.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY QUOTE -->
+  <section id="community">
+    <div class="container">
+      <div class="community-inner">
+        <div class="reveal">
+          <div class="community-quote" data-fr="« Nous sommes très fiers de notre communauté à Ottawa — une famille qui grandit ensemble dans la foi, la prière et le service. »" data-en="« We are very proud of our community in Ottawa — a family growing together in faith, prayer and service. »">
+            « Nous sommes très fiers de notre communauté à Ottawa — une famille qui grandit ensemble dans la foi, la prière et le service. »
+          </div>
+          <div class="community-author">
+            <div class="community-author-avatar">OM</div>
+            <div class="community-author-info">
+              <div class="name">Pasteur Olivier Musanganya</div>
+              <div class="role" data-fr="Pasteur Principal, CFC Ottawa" data-en="Lead Pastor, CFC Ottawa">Pasteur Principal, CFC Ottawa</div>
+            </div>
+          </div>
+        </div>
+        <div class="community-stats reveal reveal-delay-2">
+          <div class="community-stat">
+            <div class="community-stat-num">1986</div>
+            <div class="community-stat-label" data-fr="Fondation du mouvement CFC international" data-en="CFC international movement founded">Fondation du mouvement CFC international</div>
+          </div>
+          <div class="community-stat">
+            <div class="community-stat-num">5+</div>
+            <div class="community-stat-label" data-fr="Continents où la CFC est présente" data-en="Continents where CFC is present">Continents où la CFC est présente</div>
+          </div>
+          <div class="community-stat">
+            <div class="community-stat-num">100%</div>
+            <div class="community-stat-label" data-fr="Bilingue FR/EN — ouvert à tous" data-en="Bilingual FR/EN — open to all">Bilingue FR/EN — ouvert à tous</div>
+          </div>
+          <div class="community-stat">
+            <div class="community-stat-num">∞</div>
+            <div class="community-stat-label" data-fr="Amour et grâce pour chacun" data-en="Love and grace for everyone">Amour et grâce pour chacun</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="container">
+      <p class="section-label reveal" data-fr="Notre équipe" data-en="Our team">Notre équipe</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Les <em>serviteurs</em> de CFC Ottawa" data-en="The <em>servants</em> of CFC Ottawa">Les <em>serviteurs</em> de CFC Ottawa</h2>
+      <p class="section-desc reveal reveal-delay-2" data-fr="Une équipe dévouée au service de Dieu et de la communauté à Ottawa." data-en="A team dedicated to serving God and the community in Ottawa.">Une équipe dévouée au service de Dieu et de la communauté à Ottawa.</p>
+      <div class="team-grid">
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-card-inner">
+              <img src="images/olivier.png" alt="Pasteur Olivier Musanganya" class="team-card-bg" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0;" />
+            <div class="team-overlay"></div>
+            <div class="team-info">
+              <div class="team-name">Olivier Musanganya</div>
+              <div class="team-role" data-fr="Pasteur Principal" data-en="Lead Pastor">Pasteur Principal</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-card-inner">
+            <div class="team-card-bg"><div class="team-initials">RJ</div></div>
+            <div class="team-overlay"></div>
+            <div class="team-info">
+              <div class="team-name" data-fr="Responsable Jeunesse" data-en="Youth Leader">Responsable Jeunesse</div>
+              <div class="team-role" data-fr="Ministère Jeunes" data-en="Youth Ministry">Ministère Jeunes</div>
+              <div class="team-upload-hint" data-fr="📷 Ajouter une photo" data-en="📷 Add a photo">📷 Ajouter une photo</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-card-inner">
+            <div class="team-card-bg"><div class="team-initials">RE</div></div>
+            <div class="team-overlay"></div>
+            <div class="team-info">
+              <div class="team-name" data-fr="Responsable Enfants" data-en="Children's Leader">Responsable Enfants</div>
+              <div class="team-role" data-fr="Ministère Enfants" data-en="Children's Ministry">Ministère Enfants</div>
+              <div class="team-upload-hint" data-fr="📷 Ajouter une photo" data-en="📷 Add a photo">📷 Ajouter une photo</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-4">
+          <div class="team-card-inner">
+            <div class="team-card-bg"><div class="team-initials">RL</div></div>
+            <div class="team-overlay"></div>
+            <div class="team-info">
+              <div class="team-name" data-fr="Responsable Louange" data-en="Worship Leader">Responsable Louange</div>
+              <div class="team-role" data-fr="Équipe de Louange" data-en="Worship Team">Équipe de Louange</div>
+              <div class="team-upload-hint" data-fr="📷 Ajouter une photo" data-en="📷 Add a photo">📷 Ajouter une photo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section id="join">
+    <div class="container">
+      <p class="section-label reveal" data-fr="Impliquez-vous" data-en="Get Involved">Impliquez-vous</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Votre place est <em>ici</em>" data-en="Your place is <em>here</em>">Votre place est <em>ici</em></h2>
+      <p class="section-desc reveal reveal-delay-2" data-fr="Il y a une place pour chacun dans la Communauté des Frères Chrétiens d'Ottawa. Choisissez comment vous souhaitez servir." data-en="There's a place for everyone in the Christian Brotherhood Community of Ottawa. Choose how you'd like to serve.">Il y a une place pour chacun dans la Communauté des Frères Chrétiens d'Ottawa. Choisissez comment vous souhaitez servir.</p>
+      <div class="join-grid">
+        <div class="join-item reveal reveal-delay-1" data-num="01">
+          <div class="join-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          <div class="join-item-title" data-fr="Groupes de maison" data-en="Home Groups">Groupes de maison</div>
+          <p class="join-item-text" data-fr="Étudiez la Parole et priez ensemble en petits groupes dans les foyers de la communauté." data-en="Study the Word and pray together in small groups in community homes.">Étudiez la Parole et priez ensemble en petits groupes dans les foyers de la communauté.</p>
+        </div>
+        <div class="join-item reveal reveal-delay-2" data-num="02">
+          <div class="join-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+          </div>
+          <div class="join-item-title" data-fr="Équipe de Louange" data-en="Worship Team">Équipe de Louange</div>
+          <p class="join-item-text" data-fr="Rejoignez notre équipe musicale et notre chorale pour glorifier Dieu chaque dimanche." data-en="Join our music team and choir to glorify God every Sunday.">Rejoignez notre équipe musicale et notre chorale pour glorifier Dieu chaque dimanche.</p>
+        </div>
+        <div class="join-item reveal reveal-delay-3" data-num="03">
+          <div class="join-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+          </div>
+          <div class="join-item-title" data-fr="Ministère Enfants" data-en="Children's Ministry">Ministère Enfants</div>
+          <p class="join-item-text" data-fr="Enseignez et inspirez les plus jeunes à grandir dans la foi dès leur enfance." data-en="Teach and inspire the youngest to grow in faith from childhood.">Enseignez et inspirez les plus jeunes à grandir dans la foi dès leur enfance.</p>
+        </div>
+        <div class="join-item reveal" data-num="04">
+          <div class="join-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div class="join-item-title" data-fr="Ministère Jeunesse" data-en="Youth Ministry">Ministère Jeunesse</div>
+          <p class="join-item-text" data-fr="Un espace dynamique pour les 18-35 ans — prière, enseignement, fraternité et impact." data-en="A dynamic space for 18-35 year olds — prayer, teaching, fellowship and impact.">Un espace dynamique pour les 18-35 ans — prière, enseignement, fraternité et impact.</p>
+        </div>
+        <div class="join-item reveal reveal-delay-1" data-num="05">
+          <div class="join-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="join-item-title" data-fr="Équipe de service" data-en="Service Team">Équipe de service</div>
+          <p class="join-item-text" data-fr="Accueil, technique, logistique — servez dans les coulisses pour que les services soient une bénédiction." data-en="Hospitality, tech, logistics — serve behind the scenes so services are a blessing.">Accueil, technique, logistique — servez dans les coulisses pour que les services soient une bénédiction.</p>
+        </div>
+        <div class="join-item reveal reveal-delay-2" data-num="06">
+          <div class="join-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </div>
+          <div class="join-item-title" data-fr="Formation au leadership" data-en="Leadership Training">Formation au leadership</div>
+          <p class="join-item-text" data-fr="Développez votre potentiel de leader dans la communauté, guidé par le Pasteur Musanganya." data-en="Develop your leadership potential in the community, guided by Pastor Musanganya.">Développez votre potentiel de leader dans la communauté, guidé par le Pasteur Musanganya.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="#contact" class="btn btn-gold reveal" data-fr="Je veux m'impliquer" data-en="I want to get involved">Je veux m'impliquer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule">
+    <div class="container">
+      <p class="section-label reveal" data-fr="Planifier votre visite" data-en="Plan your visit">Planifier votre visite</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Venez nous <em>rencontrer</em>" data-en="Come and <em>meet us</em>">Venez nous <em>rencontrer</em></h2>
+      <div class="schedule-wrap reveal reveal-delay-2">
+        <div class="schedule-info">
+          <div class="schedule-day" data-fr="Dimanche" data-en="Sunday">Dimanche</div>
+          <div class="schedule-time" data-fr="Matin — heure à confirmer" data-en="Morning — time TBD">Matin — heure à confirmer</div>
+          <div class="schedule-detail">
+            <div class="schedule-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="schedule-detail-text">
+              <strong data-fr="Adresse" data-en="Address">Adresse</strong>
+              <span data-fr="Ottawa, Ontario, Canada<br><em>Adresse exacte à confirmer</em>" data-en="Ottawa, Ontario, Canada<br><em>Exact address to be confirmed</em>">Ottawa, Ontario, Canada<br><em>Adresse exacte à confirmer</em></span>
+            </div>
+          </div>
+          <div class="schedule-detail">
+            <div class="schedule-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </div>
+            <div class="schedule-detail-text">
+              <strong data-fr="Langues" data-en="Languages">Langues</strong>
+              <span data-fr="Français & Anglais (service bilingue)" data-en="French & English (bilingual service)">Français & Anglais (service bilingue)</span>
+            </div>
+          </div>
+          <div class="schedule-detail">
+            <div class="schedule-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="schedule-detail-text">
+              <strong data-fr="Pour les enfants" data-en="For children">Pour les enfants</strong>
+              <span data-fr="Programme Enfants disponible pendant le service" data-en="Children's program available during the service">Programme Enfants disponible pendant le service</span>
+            </div>
+          </div>
+          <div class="schedule-detail">
+            <div class="schedule-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <div class="schedule-detail-text">
+              <strong data-fr="En ligne" data-en="Online">En ligne</strong>
+              <a href="https://www.youtube.com/@CFC-p/videos" target="_blank" style="color:var(--accent);font-size:14px;" data-fr="Regarder sur YouTube — @CFC-p" data-en="Watch on YouTube — @CFC-p">Regarder sur YouTube — @CFC-p</a>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-dark" style="margin-top:28px;display:inline-block;" data-fr="Comment nous trouver" data-en="How to find us">Comment nous trouver</a>
+        </div>
+        <div class="schedule-map">
+          <div class="schedule-map-inner">
+            <div style="font-size:40px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <p style="font-size:13px;margin-top:10px;" data-fr="Carte Google Maps<br>à intégrer" data-en="Google Maps<br>to be embedded">Carte Google Maps<br>à intégrer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="container">
+      <p class="section-label reveal" data-fr="Actualités & Réflexions" data-en="News & Reflections">Actualités & Réflexions</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Blog & <em>Enseignements</em>" data-en="Blog & <em>Teachings</em>">Blog & <em>Enseignements</em></h2>
+      <div class="blog-grid">
+        <div class="blog-card featured reveal">
+          <div class="blog-thumb"><div class="blog-thumb-inner"><div class="blog-thumb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 8h14"/></svg>
+          </div></div></div>
+          <div class="blog-body">
+            <div class="blog-cat" data-fr="Enseignement" data-en="Teaching">Enseignement</div>
+            <div class="blog-title" data-fr="Qu'est-ce que marcher dans la foi comme les apôtres ?" data-en="What Does Walking in Apostolic Faith Mean?">Qu'est-ce que marcher dans la foi comme les apôtres ?</div>
+            <p class="blog-excerpt" data-fr="La vision fondatrice de la CFC depuis 1986 est claire : imiter les apôtres dans leur marche quotidienne avec Christ. Qu'est-ce que cela signifie concrètement pour notre communauté d'Ottawa en 2026..." data-en="CFC's founding vision since 1986 is clear: to imitate the apostles in their daily walk with Christ. What does this mean in practice for our Ottawa community in 2026...">La vision fondatrice de la CFC depuis 1986 est claire : imiter les apôtres dans leur marche quotidienne avec Christ. Qu'est-ce que cela signifie concrètement pour notre communauté d'Ottawa en 2026...</p>
+            <div class="blog-meta">
+              <span data-fr="20 fév. 2026" data-en="Feb 20, 2026">20 fév. 2026</span>
+              <a href="#" class="blog-read-more" data-fr="Lire →" data-en="Read →">Lire →</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card reveal reveal-delay-1">
+          <div class="blog-thumb" style="aspect-ratio:16/9"><div class="blog-thumb-inner"><div class="blog-thumb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>
+          </div></div></div>
+          <div class="blog-body">
+            <div class="blog-cat" data-fr="Témoignage" data-en="Testimony">Témoignage</div>
+            <div class="blog-title" data-fr="CFC Ottawa : une famille pour toute la famille" data-en="CFC Ottawa: A Family for the Whole Family">CFC Ottawa : une famille pour toute la famille</div>
+            <p class="blog-excerpt" data-fr="Le témoignage de familles qui ont trouvé leur place et leur foi au sein de notre communauté bilingue d'Ottawa..." data-en="Testimonies of families who found their place and faith within our bilingual Ottawa community...">Le témoignage de familles qui ont trouvé leur place dans notre communauté...</p>
+            <div class="blog-meta">
+              <span data-fr="12 fév. 2026" data-en="Feb 12, 2026">12 fév. 2026</span>
+              <a href="#" class="blog-read-more" data-fr="Lire →" data-en="Read →">Lire →</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card reveal reveal-delay-2">
+          <div class="blog-thumb" style="aspect-ratio:16/9"><div class="blog-thumb-inner"><div class="blog-thumb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div></div></div>
+          <div class="blog-body">
+            <div class="blog-cat" data-fr="Nouvelles" data-en="News">Nouvelles</div>
+            <div class="blog-title" data-fr="CFC International : 38 ans de mission mondiale" data-en="CFC International: 38 Years of World Mission">CFC International : 38 ans de mission mondiale</div>
+            <p class="blog-excerpt" data-fr="Fondée en 1986, la Communauté des Frères Chrétiens est aujourd'hui présente en Afrique, Europe, États-Unis et Canada..." data-en="Founded in 1986, the Christian Brotherhood Community is now present in Africa, Europe, the USA and Canada...">Fondée en 1986, la CFC est aujourd'hui présente sur plusieurs continents...</p>
+            <div class="blog-meta">
+              <span data-fr="5 fév. 2026" data-en="Feb 5, 2026">5 fév. 2026</span>
+              <a href="#" class="blog-read-more" data-fr="Lire →" data-en="Read →">Lire →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal" data-fr="Contactez-nous" data-en="Contact us">Contactez-nous</p>
+      <h2 class="section-title reveal reveal-delay-1" data-fr="Nous sommes là <em>pour vous</em>" data-en="We are here <em>for you</em>">Nous sommes là <em>pour vous</em></h2>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="contact-info-text" data-fr="Une question ? Vous souhaitez rejoindre CFC Ottawa, demander une prière, ou organiser une cérémonie ? Le Pasteur Olivier Musanganya et son équipe sont là pour vous accueillir." data-en="A question? Want to join CFC Ottawa, request prayer, or arrange a ceremony? Pastor Olivier Musanganya and his team are here to welcome you.">
+            Une question ? Vous souhaitez rejoindre CFC Ottawa, demander une prière, ou organiser une cérémonie ? Le Pasteur Olivier Musanganya et son équipe sont là pour vous accueillir.
+          </p>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-detail-body">
+              <strong data-fr="Adresse" data-en="Address">Adresse</strong>
+              <span>Ottawa, Ontario, Canada</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-detail-body">
+              <strong data-fr="Email" data-en="Email">Email</strong>
+              <span>info@cfcottawa.ca</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="contact-detail-body">
+              <strong data-fr="Services" data-en="Services">Services</strong>
+              <span data-fr="Dimanches matin — Ottawa, Ontario" data-en="Sunday mornings — Ottawa, Ontario">Dimanches matin — Ottawa, Ontario</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <div class="contact-detail-body">
+              <strong>YouTube</strong>
+              <a href="https://www.youtube.com/@CFC-p/videos" target="_blank" style="color:var(--accent);">youtube.com/@CFC-p</a>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.youtube.com/@CFC-p/videos" target="_blank" class="social-link" title="YouTube">▶</a>
+            <a href="#" class="social-link" title="Facebook">f</a>
+            <a href="#" class="social-link" title="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="contact-form reveal reveal-delay-2">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-fr="Prénom" data-en="First Name">Prénom</label>
+              <input type="text" id="fname" placeholder="Jean" />
+            </div>
+            <div class="form-group">
+              <label data-fr="Nom" data-en="Last Name">Nom</label>
+              <input type="text" id="lname" placeholder="Dupont" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-fr="Adresse email" data-en="Email address">Adresse email</label>
+            <input type="email" id="email" placeholder="jean@email.com" />
+          </div>
+          <div class="form-group">
+            <label data-fr="Sujet" data-en="Subject">Sujet</label>
+            <select id="subject">
+              <option data-fr="Rejoindre la communauté" data-en="Join the community">Rejoindre la communauté</option>
+              <option data-fr="Demande de prière" data-en="Prayer request">Demande de prière</option>
+              <option data-fr="Cérémonie (mariage, baptême...)" data-en="Ceremony (wedding, baptism...)">Cérémonie (mariage, baptême...)</option>
+              <option data-fr="Counseling pastoral" data-en="Pastoral counseling">Counseling pastoral</option>
+              <option data-fr="Question générale" data-en="General question">Question générale</option>
+              <option data-fr="Autre" data-en="Other">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-fr="Message" data-en="Message">Message</label>
+            <textarea id="message" placeholder="..."></textarea>
+          </div>
+          <button class="form-submit" id="submitBtn" data-fr="Envoyer le message" data-en="Send message">Envoyer le message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-name">CFC Ottawa</div>
+        <div class="footer-logo-sub" data-fr="Communauté des Frères Chrétiens<br>Église d'Ottawa — Fondée sur la Parole<br>Pasteur Olivier Musanganya" data-en="Christian Brotherhood Community<br>Ottawa Church — Founded on the Word<br>Pastor Olivier Musanganya">
+          Communauté des Frères Chrétiens<br>Église d'Ottawa — Fondée sur la Parole<br>Pasteur Olivier Musanganya
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.youtube.com/@CFC-p/videos" target="_blank" class="social-link" title="YouTube">▶</a>
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+        <a href="#about" data-fr="À Propos" data-en="About">À Propos</a>
+        <a href="#pastor" data-fr="Notre Pasteur" data-en="Our Pastor">Notre Pasteur</a>
+        <a href="#sermons" data-fr="Sermons" data-en="Sermons">Sermons</a>
+        <a href="#events" data-fr="Événements" data-en="Events">Événements</a>
+        <a href="#team" data-fr="Équipe" data-en="Team">Équipe</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Ministères" data-en="Ministries">Ministères</h4>
+        <a href="#join" data-fr="Groupes de maison" data-en="Home Groups">Groupes de maison</a>
+        <a href="#join" data-fr="Jeunesse" data-en="Youth">Jeunesse</a>
+        <a href="#join" data-fr="Enfants" data-en="Children">Enfants</a>
+        <a href="#join" data-fr="Louange" data-en="Worship">Louange</a>
+        <a href="#join" data-fr="Leadership" data-en="Leadership">Leadership</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+        <p>Ottawa, Ontario<br>Canada</p>
+        <a href="mailto:info@cfcottawa.ca">info@cfcottawa.ca</a>
+        <a href="https://www.youtube.com/@CFC-p/videos" target="_blank">YouTube @CFC-p</a>
+        <a href="#schedule" data-fr="Horaires & adresse" data-en="Schedule & location">Horaires & adresse</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" data-fr="© 2026 CFC Ottawa — Communauté des Frères Chrétiens d'Ottawa. Tous droits réservés." data-en="© 2026 CFC Ottawa — Christian Brotherhood Community of Ottawa. All rights reserved.">© 2026 CFC Ottawa — Communauté des Frères Chrétiens d'Ottawa. Tous droits réservés.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
