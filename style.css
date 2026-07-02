@@ -31,7 +31,7 @@
     .nav-links a:hover { color: var(--accent) !important; }
     .nav-cta { position: relative; z-index: 1; }
     .nav-cta a { background: var(--accent); color: var(--black); padding: 10px 20px; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; transition: background .3s; }
-    .nav-cta a:hover { background: #fff; }
+    .nav-cta a:hover { background: var(--black); color: var(--white); }
     .nav-menu { display: contents; }
     .nav-toggle { display: none; position: relative; z-index: 1; margin-left: auto; width: 40px; height: 40px; border: none; background: none; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
     .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--black); transition: transform .3s, opacity .3s; }
@@ -332,6 +332,27 @@
     .contact-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
     .contact-map-inner { text-align: center; color: var(--gray); }
     .contact-map-inner p { font-size: 13px; margin-top: 10px; }
+
+    /* ── GIVING ── */
+    #giving { background: var(--light); }
+    .giving-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 48px; }
+    .giving-card { background: var(--white); padding: 48px 40px; display: flex; flex-direction: column; gap: 16px; }
+    .giving-card-interac { background: var(--white); border-top: 3px solid var(--accent); }
+    .giving-card-icon { font-size: 36px; color: var(--accent); }
+    .giving-method { font-size: 13px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--black); }
+    .giving-desc { font-size: 13px; font-weight: 300; color: var(--gray); line-height: 1.8; }
+    .giving-fields { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 24px; }
+    .giving-field { display: flex; flex-direction: column; gap: 4px; }
+    .giving-field-label { font-size: 11px; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; color: var(--gray); }
+    .giving-field-value { font-family: 'Cormorant Garamond', serif; font-size: clamp(42px, 6vw, 64px); font-weight: 700; color: var(--accent); letter-spacing: .02em; line-height: 1; }
+    .giving-email { font-family: 'Cormorant Garamond', serif; font-size: clamp(18px, 2vw, 22px); font-weight: 600; color: var(--accent); text-decoration: none; word-break: break-all; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 10px; transition: opacity .3s; }
+    .giving-email:hover { opacity: .7; }
+    .giving-note { font-size: 12px; font-weight: 300; color: var(--gray); line-height: 1.7; }
+    .giving-scripture { margin-top: 48px; font-family: 'Cormorant Garamond', serif; font-size: clamp(16px, 2vw, 20px); font-style: italic; font-weight: 300; color: rgba(0,0,0,0.35); text-align: center; line-height: 1.8; max-width: 700px; margin-left: auto; margin-right: auto; }
+    @media (max-width: 640px) {
+      .giving-grid { grid-template-columns: 1fr; }
+      .giving-card { padding: 36px 24px; }
+    }
 
     /* ── FOOTER ── */
     footer { background: var(--white); padding: 20px 32px; border-top: 1px solid rgba(0,0,0,0.06); }
