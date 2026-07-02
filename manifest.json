@@ -1,0 +1,17 @@
+{
+  "name": "CFC Ottawa — Communauté des Frères Chrétiens d'Ottawa",
+  "short_name": "CFC Ottawa",
+  "description": "Église évangélique francophone à Ottawa, Ontario. Services dominicaux chaque dimanche matin.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f9f8f6",
+  "theme_color": "#c9a84c",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
